@@ -20,4 +20,4 @@ class StageAdmin(admin.ModelAdmin):
 
 @admin.register(Initiative)
 class InitiativeAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ("id",)

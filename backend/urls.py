@@ -23,4 +23,6 @@ urlpatterns = [
     path("api/", include("categories.urls")),
     path("api/", include("committees.urls")),
     path("api/", include("initiatives.urls")),
+    path("api/", include("feedbacks.urls")),
+    path("api/", include("countries.urls")),
 ]

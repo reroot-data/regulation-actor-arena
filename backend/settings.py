@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     "topics",
     "policy_areas",
     "publication_documents",
+    "feedbacks",
+    "countries",
 ]
 
 MIDDLEWARE = [

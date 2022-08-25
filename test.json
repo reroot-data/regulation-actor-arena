@@ -1,0 +1,1011 @@
+{
+    "reference": "Ares(2022)5216795",
+    "unit": "SECRETARIAT-GENERAL",
+    "dossierSummary": "Announced in the action plan for the social economy, the initiative aims to help Member States to better adapt their policies and laws to the specific needs of social economy entities, in all relevant fields. \nThis is necessary to boost the untapped potential of the social economy and facilitate its more even development across EU Member States and regions.\n",
+    "shortTitle": "Developing social economy framework conditions ",
+    "publications": [
+        {
+            "id": 31304278,
+            "type": "INIT_PLANNED",
+            "reference": "Ares(2022)5216795",
+            "referenceNumber": "PLAN/2022/1011",
+            "title": "Developing social economy framework conditions ",
+            "groupId": 13526,
+            "modifiedDate": "2022/08/18 11:16:00",
+            "attachments": [],
+            "endDate": null,
+            "stage": "PLANNING_WORKFLOW",
+            "decideSendDate": "2022/07/18 17:49:51",
+            "publishedDate": "2022/07/22 19:08:01",
+            "receivingFeedbackStatus": "DISABLED",
+            "publicationTranslations": [],
+            "plannedStartDate": null,
+            "translationEndDate": "2022/07/21 19:08:01",
+            "adoptionDate": null,
+            "isCurrent": false,
+            "targetGroups": null,
+            "consultationObjective": null,
+            "createdDate": "2022/07/18 18:08:01",
+            "totalFeedback": 0,
+            "plannedEndDate": null,
+            "plannedPeriod": "",
+            "frontEndStage": "INIT_PLANNED",31382689
+            "usefulLinks": [],
+            "feedbackPeriod": 0,
+            "authorName": "Estelle",
+            "authorSurname": "BACCONNIER",
+            "authorMail": "Estelle.BACCONNIER@ec.europa.eu",
+            "authorPhoneNumber": "71927",
+            "initiativeStatus": "ACTIVE",
+            "surveyContactMail": null,
+            "isComplete": true,
+            "_links": {
+                "self": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31304278{?projection}",
+                    "templated": true
+                },
+                "feedback": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31304278/feedback{?projection}",
+                    "templated": true
+                },
+                "groupInitiatives": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31304278/groupInitiatives{?projection}",
+                    "templated": true
+                }
+            }
+        },
+        {
+            "id": 31382689,
+            "type": "CALL_FOR_EVIDENCE",
+            "reference": "Ares(2022)5798238",
+            "referenceNumber": "PLAN/2022/1011",
+            "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+            "groupId": 13526,
+            "modifiedDate": "2022/08/21 11:48:50",
+            "attachments": [
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382691,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616490V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f9337",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": true,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "SV",
+                    "size": 376272,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0005-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616490V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382712,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616513V1.docx",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93d3",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "EN",
+                    "size": 384021,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0010-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616513V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382706,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616504V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93df",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "FR",
+                    "size": 382526,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0020-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616504V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382695,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616509V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93e0",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "DE",
+                    "size": 416585,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0030-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616509V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382694,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616512V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f933a",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "BG",
+                    "size": 571824,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0040-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616512V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382690,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616511V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93e2",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "CS",
+                    "size": 388163,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0050-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616511V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382705,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616510V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93d6",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "DA",
+                    "size": 310799,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0060-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616510V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382700,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616508V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93d5",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "EL",
+                    "size": 405227,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0070-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616508V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382711,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616507V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93e4",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "ES",
+                    "size": 290290,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0080-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616507V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382702,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616506V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93d8",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "ET",
+                    "size": 400639,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0090-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616506V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382697,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616505V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f9339",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "FI",
+                    "size": 373115,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0100-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616505V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382708,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616503V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93d4",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "GA",
+                    "size": 370678,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0110-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616503V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382713,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616502V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93dd",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "HR",
+                    "size": 377808,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0120-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616502V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382703,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616501V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93d7",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "HU",
+                    "size": 392840,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0130-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616501V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382698,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616500V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f9338",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "IT",
+                    "size": 370250,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0140-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616500V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382693,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616499V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93dc",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "LT",
+                    "size": 382380,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0150-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616499V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382692,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616498V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f933c",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "LV",
+                    "size": 479450,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0160-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616498V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382709,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616497V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93de",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "MT",
+                    "size": 403720,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0170-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616497V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382707,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616496V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93da",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "NL",
+                    "size": 378789,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0180-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616496V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382710,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616495V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93db",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "PL",
+                    "size": 403016,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0190-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616495V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382701,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616494V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93e1",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "PT",
+                    "size": null,
+                    "pages": null,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0200-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616494V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382704,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616493V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f933b",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "RO",
+                    "size": 383268,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0210-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616493V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382696,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616492V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93e5",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "SK",
+                    "size": 401845,
+                    "pages": 5,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0220-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616492V1.pdf"
+                },
+                {
+                    "createdDate": "2022/08/18 11:16:00",
+                    "modifiedDate": "2022/08/18 11:16:00",
+                    "id": 31382699,
+                    "reference": "Ares(2022)5798238",
+                    "filename": "PART-2022-616491V1.DOCX",
+                    "title": "Proposal for a Council Recommendation on developing social economy framework conditions",
+                    "documentId": "090166e5f02f93d9",
+                    "registrationNumber": "Ares(2022)5798238",
+                    "isOriginal": false,
+                    "date": "2022/08/18 00:00:00",
+                    "language": "SL",
+                    "size": 373607,
+                    "pages": 4,
+                    "type": "ANNEX",
+                    "workType": "CALL_FOR_EVIDENCE",
+                    "category": "DOCUMENT",
+                    "index": "01-0230-0001",
+                    "workGroup": "Ares(2022)5798238",
+                    "takeTheOriginal": null,
+                    "published": true,
+                    "ersFileName": "PART-2022-616491V1.pdf"
+                }
+            ],
+            "endDate": "2022/09/30 23:59:59",
+            "stage": "PLANNING_WORKFLOW",
+            "decideSendDate": "2022/08/18 11:03:22",
+            "publishedDate": "2022/08/18 11:16:00",
+            "receivingFeedbackStatus": "OPEN",
+            "publicationTranslations": [],
+            "plannedStartDate": null,
+            "translationEndDate": "2022/08/23 12:16:00",
+            "adoptionDate": null,
+            "isCurrent": true,
+            "targetGroups": null,
+            "consultationObjective": null,
+            "createdDate": "2022/08/18 11:16:00",
+            "totalFeedback": 8,
+            "plannedEndDate": null,
+            "plannedPeriod": "",
+            "frontEndStage": "PLANNING_WORKFLOW",
+            "usefulLinks": [],
+            "feedbackPeriod": 6,
+            "authorName": "Estelle",
+            "authorSurname": "BACCONNIER",
+            "authorMail": "Estelle.BACCONNIER@ec.europa.eu",
+            "authorPhoneNumber": "71927",
+            "initiativeStatus": "ACTIVE",
+            "surveyContactMail": null,
+            "isComplete": true,
+            "_links": {
+                "self": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31382689{?projection}",
+                    "templated": true
+                },
+                "feedback": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31382689/feedback{?projection}",
+                    "templated": true
+                },
+                "groupInitiatives": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31382689/groupInitiatives{?projection}",
+                    "templated": true
+                }
+            }
+        },
+        {
+            "id": 31304280,
+            "type": "PROP_RECO",
+            "reference": null,
+            "referenceNumber": null,
+            "title": "Developing social economy framework conditions ",
+            "groupId": 13526,
+            "modifiedDate": "2022/08/22 16:09:20",
+            "attachments": [],
+            "endDate": null,
+            "stage": "ADOPTION_WORKFLOW",
+            "decideSendDate": null,
+            "publishedDate": null,
+            "receivingFeedbackStatus": "DISABLED",
+            "publicationTranslations": [],
+            "plannedStartDate": "2023/04/01 00:00:00",
+            "translationEndDate": null,
+            "adoptionDate": null,
+            "isCurrent": false,
+            "targetGroups": null,
+            "consultationObjective": null,
+            "createdDate": "2022/07/18 18:08:02",
+            "totalFeedback": 0,
+            "plannedEndDate": "2023/06/30 00:00:00",
+            "plannedPeriod": "Q-2023-2",
+            "frontEndStage": "ADOPTION_WORKFLOW",
+            "usefulLinks": [],
+            "feedbackPeriod": 0,
+            "authorName": "Estelle",
+            "authorSurname": "BACCONNIER",
+            "authorMail": "Estelle.BACCONNIER@ec.europa.eu",
+            "authorPhoneNumber": "71927",
+            "initiativeStatus": "UPCOMING",
+            "surveyContactMail": null,
+            "isComplete": true,
+            "_links": {
+                "self": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31304280{?projection}",
+                    "templated": true
+                },
+                "feedback": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31304280/feedback{?projection}",
+                    "templated": true
+                },
+                "groupInitiatives": {
+                    "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/publications/31304280/groupInitiatives{?projection}",
+                    "templated": true
+                }
+            }
+        }
+    ],
+    "publishedDate": "2022/07/22 19:08:01",
+    "orderDate": "2022/08/18 11:16:00",
+    "initiativeStatus": "ACTIVE",
+    "isMajor": true,
+    "isEvaluation": false,
+    "stage": "PLANNING_WORKFLOW",
+    "initiativeCategory": [],
+    "foreseenActType": "PROP_RECO",
+    "receivingFeedbackStatus": "OPEN",
+    "createdDate": "2022/07/18 18:08:01",
+    "betterRegulationRequirement": ["ROADMAP"],
+    "committee": null,
+    "expertGroup": null,
+    "legalBasis": [],
+    "policyAreas": [
+        {
+            "id": 42261,
+            "code": "EMPL5",
+            "label": "Employment"
+        }
+    ],
+    "dg": "EMPL",
+    "modifiedDate": "2022/08/22 16:09:15",
+    "id": 13526,
+    "topics": [
+        {
+            "id": 6387401,
+            "code": "EMPL",
+            "label": "Employment and social affairs"
+        }
+    ],
+    "initiativeTranslations": [
+        {
+            "value": "Yhteisötalous – perusedellytysten kehittäminen",
+            "language": "FI",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Dette initiativ har til formål at hjælpe medlemslandene med bedre at tilpasse deres politikker og lovgivning til den sociale økonomis særlige behov på alle relevante områder. Det blev bebudet i handlingsplanen for den sociale økonomi.</p> \n<p>Dette initiativ er nødvendigt for at frigøre det uudnyttede potentiale i den sociale økonomi og sikre, at den udvikles mere jævnt på tværs af EU's medlemslande og regioner.</p>",
+            "language": "DA",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>Det här initiativet ska hjälpa medlemsländerna att bättre anpassa sin politik och lagstiftning till den sociala ekonomins särskilda behov på alla relevanta områden. Initiativet aviserades i EU:s handlingsplan för den sociala ekonomin.</p> \n<p>Initiativet är nödvändigt för att frigöra den sociala ekonomins outnyttjade potential och se till att den sociala ekonomin utvecklas jämnare i EU:s länder och regioner.</p>",
+            "language": "SV",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Κοινωνική οικονομία — ανάπτυξη συνθηκών-πλαισίου",
+            "language": "EL",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "Gospodarka społeczna – rozwój ramowych warunków",
+            "language": "PL",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Această inițiativă urmărește să ajute statele membre să își adapteze mai bine politicile și legislația la nevoile specifice ale economiei sociale, în toate domeniile relevante. Ea a fost anunțată în planul de acțiune pentru economia socială.</p> \n<p>Inițiativa este necesară pentru a debloca potențialul neexploatat al economiei sociale și pentru a asigura o dezvoltare mai uniformă a acesteia în toate statele membre și regiunile UE.</p>",
+            "language": "RO",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Economia socială – dezvoltarea condițiilor-cadru",
+            "language": "RO",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Esta iniciativa visa ajudar os Estados-Membros a adaptarem melhor as suas políticas e a sua legislação às necessidades específicas da economia social, em todos os domínios pertinentes. Foi anunciada no plano de ação para a economia social.</p> \n<p>Esta iniciativa é necessária para libertar o potencial inexplorado da economia social e garantir que esta seja desenvolvida uniformemente em todos os Estados-Membros e regiões da UE.</p>",
+            "language": "PT",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Szociális gazdaság – a keretfeltételek fejlesztése",
+            "language": "HU",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Aloitteen tarkoituksena on auttaa jäsenvaltioita mukauttamaan paremmin politiikkaansa ja lainsäädäntöään yhteisötalouden tarpeisiin kaikilla asiaankuuluvilla aloilla. Siitä ilmoitettiin yhteisötalouden toimintasuunnitelmassa.</p> \n<p>Aloite on tarpeen yhteisötalouden käyttämättömien mahdollisuuksien hyödyntämiseksi ja sen varmistamiseksi, että yhteisötaloutta kehitetään tasaisemmin kaikissa EU-maissa ja kaikilla alueilla.</p>",
+            "language": "FI",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Sociálne hospodárstvo – rozvoj rámcových podmienok",
+            "language": "SK",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Mit dieser Initiative sollen die Mitgliedstaaten dabei unterstützt werden, ihre politischen Maßnahmen und ihre Rechtsvorschriften in allen maßgeblichen Bereichen besser auf die spezifischen Erfordernisse der Sozialwirtschaft auszurichten. Sie wurde im Aktionsplan für die Sozialwirtschaft angekündigt.</p> \n<p>Diese Initiative ist notwendig, um das ungenutzte Potenzial der Sozialwirtschaft zu heben und dafür zu sorgen, dass die Sozialwirtschaft in allen Mitgliedstaaten und Regionen der EU ausgewogener entwickelt wird.</p>",
+            "language": "DE",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Socialno gospodarstvo – razvoj okvirnih pogojev",
+            "language": "SL",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Η πρωτοβουλία αυτή έχει ως στόχο να βοηθήσει τα κράτη μέλη να προσαρμόσουν καλύτερα τις πολιτικές και τη νομοθεσία τους στις ειδικές ανάγκες της κοινωνικής οικονομίας, σε όλους τους σχετικούς τομείς. Ανακοινώθηκε στο σχέδιο δράσης για την κοινωνική οικονομία.</p> \n<p>Η πρωτοβουλία αυτή είναι αναγκαία για να απελευθερωθεί το ανεκμετάλλευτο δυναμικό της κοινωνικής οικονομίας και να διασφαλιστεί η πιο ομοιόμορφη ανάπτυξή του σε όλα τα κράτη μέλη και τις περιφέρειες της ΕΕ.</p>",
+            "language": "EL",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>Esta iniciativa tiene por objeto ayudar a los Estados miembros a adaptar mejor sus políticas y leyes a las necesidades específicas de la economía social, en todos los ámbitos pertinentes. Se anunció en el plan de acción para la economía social.</p> \n<p>Esta iniciativa es necesaria para liberar el potencial no explotado de la economía social y garantizar que se desarrolle de manera más uniforme en todos los Estados miembros y regiones de la UE.</p>",
+            "language": "ES",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Économie sociale — Élaboration des conditions-cadres",
+            "language": "FR",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "Socialinė ekonomika. Pagrindinių sąlygų sudarymas",
+            "language": "LT",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "Социална икономика — изготвяне на рамкови условия",
+            "language": "BG",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Cilj te pobude je pomagati državam članicam, da svoje politike in zakonodajo bolje prilagodijo posebnim potrebam socialnega gospodarstva na vseh zadevnih področjih. Napovedana je bila v akcijskem načrtu za socialno gospodarstvo.</p> \n<p>Ta pobuda je potrebna za sprostitev neizkoriščenega potenciala socialnega gospodarstva in zagotovitev, da se enakomerneje razvija v vseh državah članicah in regijah EU.</p>",
+            "language": "SL",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Sociālā ekonomika — pamatnosacījumu izstrāde",
+            "language": "LV",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Cieľom tejto iniciatívy je pomôcť členským štátom lepšie prispôsobiť svoje politiky a právne predpisy osobitným potrebám sociálneho hospodárstva vo všetkých príslušných oblastiach. Tento zámer bol ohlásený v akčnom pláne pre sociálne hospodárstvo.</p> \n<p>Táto iniciatíva je potrebná na uvoľnenie nevyužitého potenciálu sociálneho hospodárstva a na zabezpečenie jeho rovnomernejšieho rozvoja vo všetkých členských štátoch a regiónoch EÚ.</p>",
+            "language": "SK",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>Is é is aidhm don tionscnamh seo cuidiú leis na Ballstáit a mbeartais agus a ndlíthe a oiriúnú níos fearr do riachtanais shonracha an gheilleagair shóisialta, i ngach réimse ábhartha. Fógraíodh sa phlean gníomhaíochta don gheilleagar sóisialta é.</p> \n<p>Tá gá leis an tionscnamh seo chun leas a bhaint as acmhainneacht neamhshaothraithe an gheilleagair shóisialta agus chun a áirithiú go bhforbrófar ar bhealach níos cothroime ar fud Bhallstáit agus réigiúin an Aontais é.</p>",
+            "language": "GA",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "An geilleagar sóisialta — creatdálaí a fhorbairt",
+            "language": "GA",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Dit initiatief is bedoeld om de lidstaten te helpen hun beleid en wetgeving beter af te stemmen op de specifieke behoeften van de sociale economie, op alle relevante gebieden. Het werd aangekondigd in het actieplan voor de sociale economie.</p> \n<p>Dit initiatief is nodig om het onbenutte potentieel van de sociale economie te ontsluiten en ervoor te zorgen dat de sociale economie in alle EU-lidstaten en -regio’s gelijker wordt ontwikkeld.</p>",
+            "language": "NL",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>L'iniziativa intende aiutare gli Stati membri ad adeguare meglio le loro politiche e leggi alle esigenze specifiche dell'economia sociale, in tutti i settori pertinenti. È stata annunciata nel piano d'azione per l'economia sociale.</p> \n<p>L'iniziativa è necessaria per sbloccare il potenziale inutilizzato dell'economia sociale e garantire che sia sviluppato in modo più uniforme tra gli Stati membri e le regioni dell'UE.</p>",
+            "language": "IT",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "L-ekonomija soċjali – noħolqu l-kundizzjonijiet qafas",
+            "language": "MT",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Algatuse eesmärk on aidata liikmesriikidel kohandada oma poliitikat ja õigusakte paremini sotsiaalmajanduse vajadustele kõigis asjaomastes valdkondades. Algatus kuulutati välja sotsiaalmajanduse tegevuskavas.</p> \n<p>Algatus on vajalik selleks, et realiseerida sotsiaalmajanduse kasutamata võimalused ja tagada sotsiaalmajanduse ühtlasem arendamine ELi liikmesriikide ja piirkondade lõikes.</p>",
+            "language": "ET",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Sociální ekonomika – rozvoj rámcových podmínek",
+            "language": "CS",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>This initiative aims to help Member States better adapt their policies and laws to the specific needs of the social economy, in all relevant fields. It was announced in the action plan for the social economy.</p><p>This initiative is necessary to unlock the untapped potential of the social economy and to make sure that it is developed more evenly across EU Member States and regions.</p>",
+            "language": "EN",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Sociale economie: ontwikkeling van randvoorwaarden",
+            "language": "NL",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "Social economy – developing framework conditions",
+            "language": "EN",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "Sozialwirtschaft – Entwicklung der Rahmenbedingungen",
+            "language": "DE",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "Economía social: desarrollo de condiciones marco",
+            "language": "ES",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Din l-inizjattiva għandha l-għan li tgħin lill-Istati Membri jadattaw aħjar il-politiki u l-liġijiet tagħhom għall-ħtiġijiet speċifiċi tal-ekonomija soċjali, fl-oqsma rilevanti kollha. Din tħabbret fil-pjan ta’ azzjoni għall-ekonomija soċjali.</p> \n<p>Din l-inizjattiva hija meħtieġa biex jinħataf il-potenzjal mhux sfruttat tal-ekonomija soċjali u biex ikun żgurat li din tiġi żviluppata b’mod aktar uniformi madwar l-Istati Membri u r-reġjuni tal-UE.</p>",
+            "language": "MT",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>Šīs iniciatīvas mērķis ir palīdzēt dalībvalstīm labāk pielāgot savu politiku un tiesību aktus sociālās ekonomikas īpašajām vajadzībām visās attiecīgajās jomās. Par to tika paziņots sociālās ekonomikas rīcības plānā.</p> \n<p>Šī iniciatīva ir vajadzīga, lai izmantotu neapgūto sociālās ekonomikas potenciālu un nodrošinātu, ka tā attīstīstās vienmērīgāk visās ES dalībvalstīs un reģionos.</p>",
+            "language": "LV",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Sotsiaalmajandus – raamtingimuste väljatöötamine",
+            "language": "ET",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Šia iniciatyva siekiama padėti valstybėms narėms geriau pritaikyti savo politiką ir teisės aktus prie konkrečių socialinės ekonomikos poreikių visose susijusiose srityse. Apie tai paskelbta socialinės ekonomikos veiksmų plane.</p> \n<p>Ši iniciatyva reikalinga siekiant realizuoti neišnaudotą socialinės ekonomikos potencialą ir užtikrinti nuoseklesnę jos plėtrą visose ES valstybėse narėse ir regionuose.</p>",
+            "language": "LT",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Economia sociale - sviluppare condizioni quadro",
+            "language": "IT",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Cílem této iniciativy je pomoci členským státům optimalizovat přizpůsobení jejich politik a právních předpisů specifickým potřebám sociální ekonomiky ve všech příslušných oblastech. Tento záměr byl oznámen v akčním plánu pro sociální ekonomiku.</p> \n<p>Iniciativa je nezbytná k uvolnění nevyužitého potenciálu sociální ekonomiky a k zajištění jejího rovnoměrnějšího rozvoje ve všech členských státech a regionech EU.</p>",
+            "language": "CS",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>A kezdeményezés célja, hogy segítse a tagállamokat abban, hogy szakpolitikáikat és jogszabályaikat valamennyi releváns területen a szociális gazdaság sajátos szükségleteihez igazítsák. E célokat a szociális gazdaságra vonatkozó cselekvési terv fekteti le.</p> \n<p>A kezdeményezésre azért van szükség, hogy kibontakoztassa a szociális gazdaságban rejlő kiaknázatlan lehetőségeket, és biztosítsa a szociális gazdaság egyenletesebb fejlődését az EU tagállamaiban és régióiban.</p>",
+            "language": "HU",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Economia social – desenvolvimento de condições-quadro",
+            "language": "PT",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Cilj je ove inicijative pomoći državama članicama da bolje prilagode svoje politike i zakone posebnim potrebama socijalne ekonomije u svim relevantnim područjima. Najavljena je u akcijskom planu za socijalnu ekonomiju.</p> \n<p>Ova je inicijativa potrebna kako bi se oslobodio neiskorišteni potencijal socijalne ekonomije i kako bi se osigurao ujednačeniji razvoj u svim državama članicama i regijama EU-a.</p>",
+            "language": "HR",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Den sociale økonomi – udvikling af rammebetingelser",
+            "language": "DA",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "<p>Celem przedmiotowej inicjatywy jest udzielenie państwom członkowskim wsparcia w lepszym dostosowywaniu ich polityki i przepisów do szczególnych potrzeb gospodarki społecznej we wszystkich odpowiednich obszarach. Została ona zapowiedziana w planie działania na rzecz gospodarki społecznej.</p> \n<p>Inicjatywa ta jest niezbędna do uwolnienia niewykorzystanego potencjału gospodarki społecznej oraz do zapewnienia jej bardziej równomiernego rozwoju we wszystkich państwach członkowskich i regionach UE.</p>",
+            "language": "PL",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>Cette initiative vise à aider les États membres à mieux adapter leurs politiques et leur législation aux besoins spécifiques de l’économie sociale dans tous les domaines pertinents. Elle a été annoncée dans le plan d’action pour l’économie sociale.</p> \n<p>Cette initiative est nécessaire pour libérer le potentiel inexploité de l’économie sociale et faire en sorte que celle-ci soit développée de manière plus homogène dans l’ensemble des États membres et régions de l’Union européenne (UE).</p>",
+            "language": "FR",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "<p>Тази инициатива има за цел да се помогне на държавите членки да адаптират по-добре своите политики и закони към специфичните нужди на социалната икономика във всички области от значение. Тя беше обявена в плана за действие за социалната икономика.</p> \n<p>Инициативата е необходима, за да се отключи неизползваният потенциал на социалната икономика и да се гарантира, че тя се развива по-равномерно във всички държави членки и региони на ЕС.</p>",
+            "language": "BG",
+            "field": "SUMMARY"
+        },
+        {
+            "value": "Social ekonomi – utveckling av ramvillkor",
+            "language": "SV",
+            "field": "SHORT_TITLE"
+        },
+        {
+            "value": "Socijalna ekonomija – razvoj okvirnih uvjeta",
+            "language": "HR",
+            "field": "SHORT_TITLE"
+        }
+    ],
+    "isGroupedCfe": false,
+    "_links": {
+        "self": {
+            "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/groupInitiatives/13526{?projection}",
+            "templated": true
+        },
+        "policyAreas": {
+            "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/groupInitiatives/13526/policyAreas{?projection}",
+            "templated": true
+        },
+        "publications": {
+            "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/groupInitiatives/13526/publications{?projection}",
+            "templated": true
+        }
+    },
+    "_links": {
+        "self": {
+            "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/groupInitiatives/13526{?projection}",
+            "templated": true
+        },
+        "policyAreas": {
+            "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/groupInitiatives/13526/policyAreas"
+        },
+        "publications": {
+            "href": "https://www.cc.cec/info/law/better-regulation/brpapi/api/search/groupInitiatives/13526/publications"
+        }
+    }
+}

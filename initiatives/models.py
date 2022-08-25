@@ -5,7 +5,7 @@ from django.db import models
 
 class LegalBasis(models.Model):
     document_legal = models.URLField()
-    article = (models.CharField(max_length=8),)
+    article = models.CharField(max_length=8, null=True, blank=True)
     paragraph = models.CharField(max_length=8, blank=True, null=True)
     alinea = models.CharField(max_length=8, blank=True, null=True)
     point = models.CharField(max_length=8, blank=True, null=True)

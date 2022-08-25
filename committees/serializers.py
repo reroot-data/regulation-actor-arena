@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Committee, ExpertGroup, TargetGroup, Unit, WorkGroup
+from .models import Committee, ExpertGroup, Unit, UserType, WorkGroup
 
 
 class WorkGroupSerializer(serializers.ModelSerializer):
@@ -9,9 +9,9 @@ class WorkGroupSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class TargetGroupSerializer(serializers.ModelSerializer):
+class UserTypeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TargetGroup
+        model = UserType
         fields = "__all__"
 
 

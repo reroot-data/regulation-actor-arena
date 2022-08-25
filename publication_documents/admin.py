@@ -10,4 +10,4 @@ class AttachmentAdmin(admin.ModelAdmin):
 
 @admin.register(Publication)
 class PublicationAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ("id",)

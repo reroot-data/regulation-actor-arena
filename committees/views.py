@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 
-from .models import Committee, ExpertGroup, TargetGroup, Unit, WorkGroup
+from .models import Committee, ExpertGroup, Unit, UserType, WorkGroup
 from .serializers import (
     CommitteeSerializer,
     ExpertGroupSerializer,
-    TargetGroupSerializer,
     UnitSerializer,
+    UserTypeSerializer,
     WorkGroupSerializer,
 )
 
@@ -16,9 +16,9 @@ class ExpertGroupViewSet(viewsets.ModelViewSet):
     serializer_class = ExpertGroupSerializer
 
 
-class TargetGroupViewSet(viewsets.ModelViewSet):
-    queryset = TargetGroup.objects.all()
-    serializer_class = TargetGroupSerializer
+class UserTypeViewSet(viewsets.ModelViewSet):
+    queryset = UserType.objects.all()
+    serializer_class = UserTypeSerializer
 
 
 class WorkGroupViewSet(viewsets.ModelViewSet):

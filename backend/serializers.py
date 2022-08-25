@@ -1,5 +1,6 @@
-from typing import Any, OrderedDict
+from typing import Any, OrderedDict, Union
 
+from django.db.models import QuerySet
 from rest_framework import serializers
 
 
@@ -7,9 +8,23 @@ class SlugRelatedOptionalField(serializers.SlugRelatedField):
     def to_internal_value(self, data):
         if data:
 
-            queryset = self.get_queryset().filter(**{self.slug_field: data})
+            queryset = self.get_queryset().filter(**{self.slug_field: data})  # type: ignore
             if queryset.exists():
                 return queryset.first()
+        return data
+
+
+class SlugRelatedGetOrCreateField(serializers.SlugRelatedField):
+    def to_internal_value(self, data):
+        if data:
+            queryset = self.get_queryset()
+            try:
+                return queryset.get_or_create(**{self.slug_field: data})[  # type: ignore
+                    0
+                ]
+
+            except (TypeError, ValueError):
+                self.fail("invalid")
         return data
 
 
