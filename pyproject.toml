@@ -12,6 +12,8 @@ pyhumps = "^3.7.2"
 djangorestframework = "^3.13.1"
 google-cloud-translate = "^3.8.1"
 googletrans = "^3.0.0"
+requests-toolbelt = "^0.9.1"
+google-trans-new = "^1.1.9"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"

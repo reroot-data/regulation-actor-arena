@@ -1,4 +1,5 @@
 from django.contrib import admin
+from publication_documents.admin import PublicationInline
 
 from .models import Initiative, LegalBasis, Stage, Type
 
@@ -21,3 +22,4 @@ class StageAdmin(admin.ModelAdmin):
 @admin.register(Initiative)
 class InitiativeAdmin(admin.ModelAdmin):
     search_fields = ("id",)
+    inlines = (PublicationInline,)

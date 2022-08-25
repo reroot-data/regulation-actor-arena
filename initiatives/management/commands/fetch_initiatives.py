@@ -1,3 +1,4 @@
+import http
 from email import policy
 from pprint import pprint
 from re import A
@@ -5,7 +6,7 @@ from subprocess import call
 
 import humps
 import requests
-from backend.requests import TimeoutHTTPAdapter
+from backend.requests import TimeoutHTTPAdapter, logging_hook
 from django.core.management import call_command
 from django.core.management.base import BaseCommand, CommandError
 from feedbacks.models import Feedback, FeedbackAttachment
@@ -33,7 +34,6 @@ class Command(BaseCommand):
         """
         returns a tupe of (data, total_pages) from a response
         """
-        response.raise_for_status()
         response_json = response.json()
         response_data = response_json.get("_embedded", {}).get(
             "initiativeResultDtoes", []
@@ -45,11 +45,8 @@ class Command(BaseCommand):
     def get_request(
         self,
     ):
-        retry_strategy = Retry(
-            total=3,
-        )
-        adapter = TimeoutHTTPAdapter(max_retries=retry_strategy)
-
+        retry_strategy = Retry(total=3, backoff_factor=30)
+        adapter = HTTPAdapter(max_retries=retry_strategy)
         http = requests.Session()
         http.headers.update(
             {
@@ -64,30 +61,19 @@ class Command(BaseCommand):
         """
         fetches and saves initiatives
         """
+
+        id = initiative.pop("id")
+        if Initiative.objects.filter(id=id).exists():
+            # Do not fetch detail if already in the database
+            return
+
+        print("fetch initiative ", id)
         DETAIL_URL = (
             "https://ec.europa.eu/info/law/better-regulation/brpapi/groupInitiatives"
         )
-        DETAIL_HEADERS = {
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8,nl;q=0.7,sr;q=0.6",
-            "Cache-Control": "No-Cache",
-            "Connection": "keep-alive",
-            "Sec-Fetch-Dest": "empty",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Site": "same-origin",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
-            "X-Requested-With": "XMLHttpRequest",
-            "sec-ch-ua": '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"',
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": '"macOS"',
-        }
-
-        id = initiative.pop("id")
-        print("fetch initiative ", id)
 
         detail_response = self.get_request().get(
             f"{DETAIL_URL}/{id}",
-            headers=DETAIL_HEADERS,
             params={"language": "EN"},
         )
         detail_response.raise_for_status()
@@ -192,53 +178,28 @@ class Command(BaseCommand):
         self.stdout.write("fetch countries")
         call_command("fetch_countries")
 
-        LIST_URL = (
+        URL = (
             f"https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives"
         )
-        FEEDBACK_URL = (
-            "https://ec.europa.eu/info/law/better-regulation/brpapi/allFeedback"
-        )
-
-        ### PAYLOAD
-        PAYLOAD = {}
-
-        ### HEADERS
-        LIST_HEADERS = {
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8,nl;q=0.7,sr;q=0.6",
-            "Cache-Control": "No-Cache",
-            "Connection": "keep-alive",
-            "Sec-Fetch-Dest": "empty",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Site": "same-origin",
-            # "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
-            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
-            "X-Requested-With": "XMLHttpRequest",
-            "sec-ch-ua": '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"',
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": '"macOS"',
-        }
-
-        ### PARAMS
-        LIST_PARAMS = {"size": 100, "language": "EN", "page": 0}
+        PARAMS = {"size": 10, "language": "EN", "page": 0}
 
         self.stdout.write("fetch initiatives")
+
         first_page = self.get_request().get(
-            LIST_URL,
-            headers=LIST_HEADERS,
-            params=LIST_PARAMS,
-            data=PAYLOAD,
+            URL,
+            params=PARAMS,
         )
+        first_page.raise_for_status()
         data, total_pages = self.get_data_total_from_response(first_page)
         for initiative in data:
-
             self.fetch_initiative_detail(initiative)
 
         for page in range(0, total_pages):
             self.stdout.write(f"initiatives:  page {page + 1} from {total_pages}")
-            LIST_PARAMS["page"] = page
+            PARAMS["page"] = page
             page = self.get_request().get(
-                LIST_URL, headers=LIST_HEADERS, params=LIST_PARAMS, data=PAYLOAD
+                URL,
+                params=PARAMS,
             )
             initiatives, _ = self.get_data_total_from_response(page)
 

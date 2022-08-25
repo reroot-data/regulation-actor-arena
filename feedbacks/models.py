@@ -4,8 +4,8 @@ from django.db import models
 class FeedbackAttachment(models.Model):
     id = models.BigIntegerField(primary_key=True)
     size = models.BigIntegerField()
-    documentId = models.CharField(max_length=1000)
-    ers_file_name = models.CharField(max_length=1000)
+    documentId = models.TextField()
+    ers_file_name = models.TextField()
     pages = models.IntegerField(null=True, blank=True)
     pdf_size = models.BigIntegerField()
     is_rendered = models.BooleanField()
@@ -34,7 +34,7 @@ class Feedback(models.Model):
         "committees.UserType", on_delete=models.CASCADE, null=True, blank=True
     )
     company_size = models.CharField(max_length=500, null=True, blank=True)
-    tr_number = models.CharField(max_length=100, null=True, blank=True)
+    tr_number = models.TextField(blank=True, null=True)
     is_my_feedback = models.BooleanField()
     reference_initiative = models.CharField(max_length=200)
     history_event_occurs = models.BooleanField()

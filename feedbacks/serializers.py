@@ -1,9 +1,8 @@
 from backend.serializers import SlugRelatedGetOrCreateField
 from committees.models import UserType
 from countries.models import Country
-from rest_framework import serializers
-
 from initiatives.models import Status
+from rest_framework import serializers
 
 from .models import Feedback, FeedbackAttachment
 
@@ -15,6 +14,7 @@ class FeedbackSerializer(serializers.ModelSerializer):
         read_only=False,
         slug_field="code",
         allow_null=True,
+        required=False,
     )
     status = SlugRelatedGetOrCreateField(
         queryset=Status.objects.all(),
@@ -29,7 +29,9 @@ class FeedbackSerializer(serializers.ModelSerializer):
         read_only=False,
         slug_field="code",
         allow_null=True,
+        required=False,
     )
+
     class Meta:
         model = Feedback
         fields = "__all__"

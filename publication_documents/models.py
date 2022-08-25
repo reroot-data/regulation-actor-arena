@@ -20,13 +20,15 @@ class Attachment(models.Model):
     document_id = models.CharField(max_length=100)
     registration_number = models.CharField(max_length=100, blank=True, null=True)
     is_original = models.BooleanField()
-    date = models.DateTimeField()
+    date = models.DateTimeField(null=True, blank=True)
     language = models.CharField(max_length=5)
     size = models.BigIntegerField(blank=True, null=True)
     pages = models.IntegerField(blank=True, null=True)
 
     type = models.ForeignKey(AttachmentType, on_delete=models.CASCADE)
-    work_type = models.ForeignKey("initiatives.Type", on_delete=models.CASCADE)
+    work_type = models.ForeignKey(
+        "initiatives.Type", on_delete=models.CASCADE, null=True, blank=True
+    )
 
     category = models.ForeignKey("categories.Category", on_delete=models.CASCADE)
     index = models.CharField(max_length=100, null=True, blank=True)
