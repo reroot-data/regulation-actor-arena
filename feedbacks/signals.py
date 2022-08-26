@@ -1,9 +1,12 @@
-from django.db.models.signals import pre_save
+from committees.models import UserType
+from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from google.api_core.exceptions import InvalidArgument
 from google.cloud import translate_v3 as translate
 from google.oauth2 import service_account
 from google_trans_new import google_translator
+from sentiments.models import Sentiment
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 from .models import Feedback
 
@@ -61,3 +64,28 @@ def Feedback_add_translation(sender, instance, **kwargs):
     # except InvalidArgument as e:
     #     return
     return
+
+
+@receiver(post_save, sender=Feedback)
+def feedback_add_sentiment(sender, instance, *args, **kwargs):
+
+    if not instance.feedback_en:
+        return
+
+    if instance.user_type:
+        if not instance.user_type.include_in_sentiment_analysis:
+            return
+
+    sid_obj = SentimentIntensityAnalyzer()
+    sentiment_dict = sid_obj.polarity_scores(instance.feedback_en)
+
+    if sentiment_dict:
+        sentiment, created = Sentiment.objects.update_or_create(
+            feedback=instance,
+            defaults={
+                "positive": sentiment_dict["pos"],
+                "neutral": sentiment_dict["neu"],
+                "negative": sentiment_dict["neg"],
+                "compound": sentiment_dict["compound"],
+            },
+        )

@@ -15,7 +15,7 @@ class Attachment(models.Model):
     created_date = models.DateTimeField(blank=True, null=True)
     modified_date = models.DateTimeField()
     reference = models.CharField(max_length=100, blank=True, null=True)
-    title = models.CharField(max_length=1000, blank=True, null=True)
+    title = models.TextField()
     filename = models.CharField(max_length=200)
     document_id = models.CharField(max_length=100)
     registration_number = models.CharField(max_length=100, blank=True, null=True)

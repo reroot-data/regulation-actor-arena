@@ -23,7 +23,7 @@ class FeedbackSerializer(serializers.ModelSerializer):
         slug_field="name",
         allow_null=True,
     )
-    user_type = SlugRelatedGetOrCreateField(
+    user_type = serializers.SlugRelatedField(
         queryset=UserType.objects.all(),
         many=False,
         read_only=False,

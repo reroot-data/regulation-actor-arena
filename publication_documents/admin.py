@@ -20,3 +20,6 @@ class PublicationAdmin(admin.ModelAdmin):
     inlines = (FeedbackInline,)
     list_display = ("id", "title", "total_feedback")
     search_fields = ("id",)
+
+    def has_change_permission(self, request, obj=None):
+        return False

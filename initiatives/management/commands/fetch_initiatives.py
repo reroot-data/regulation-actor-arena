@@ -164,18 +164,18 @@ class Command(BaseCommand):
                         print("topic", key, error)
         else:
             for key, error in serializer.errors.items():
-                print(key, error)
+                print("initiative", key, error)
 
     def handle(self, *args, **options):
-        self.stdout.write("fetch stages")
+        # self.stdout.write("fetch stages")
         call_command("fetch_stages")
-        self.stdout.write("fetch types")
+        # self.stdout.write("fetch types")
         call_command("fetch_types")
-        self.stdout.write("fetch topics")
+        # self.stdout.write("fetch topics")
         call_command("fetch_topics")
-        self.stdout.write("fetch user types")
+        # self.stdout.write("fetch user types")
         call_command("fetch_user_types")
-        self.stdout.write("fetch countries")
+        # self.stdout.write("fetch countries")
         call_command("fetch_countries")
 
         URL = (
@@ -195,7 +195,7 @@ class Command(BaseCommand):
             self.fetch_initiative_detail(initiative)
 
         for page in range(0, total_pages):
-            self.stdout.write(f"initiatives:  page {page + 1} from {total_pages}")
+            # self.stdout.write(f"initiatives:  page {page + 1} from {total_pages}")
             PARAMS["page"] = page
             page = self.get_request().get(
                 URL,

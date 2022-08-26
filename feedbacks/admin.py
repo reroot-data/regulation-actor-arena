@@ -9,10 +9,15 @@ class FeedbackInline(admin.StackedInline):
 
 @admin.register(Feedback)
 class FeedbackAdmin(admin.ModelAdmin):
-    search_fields = (
+    search_fields = ("id", "publication", "organization")
+    list_filter = ("user_type",)
+    list_display = (
         "id",
-        "publication",
+        "organization",
     )
+
+    def has_change_permission(self, request, obj=None):
+        return False
 
 
 @admin.register(FeedbackAttachment)

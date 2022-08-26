@@ -91,7 +91,7 @@ class Command(BaseCommand):
             self.fetch_feedback_detail(feedback, publication_id)
 
         for page in range(0, total_pages):
-            self.stdout.write(f"feedback fetch page {page + 1} from {total_pages}")
+            # self.stdout.write(f"feedback fetch page {page + 1} from {total_pages}")
             PARAMS["page"] = page
             page = self.get_request().get(URL, params=PARAMS, timeout=5)
             feedbacks, _ = self.get_data_total_from_response(page)

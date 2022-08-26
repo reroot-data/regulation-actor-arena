@@ -25,4 +25,5 @@ urlpatterns = [
     path("api/", include("initiatives.urls")),
     path("api/", include("feedbacks.urls")),
     path("api/", include("countries.urls")),
+    path("api/", include("sentiments.urls")),
 ]

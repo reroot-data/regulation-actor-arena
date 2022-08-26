@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "publication_documents",
     "feedbacks",
     "countries",
+    "sentiments",
 ]
 
 MIDDLEWARE = [
