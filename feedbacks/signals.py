@@ -5,6 +5,7 @@ from google.api_core.exceptions import InvalidArgument
 from google.cloud import translate_v3 as translate
 from google.oauth2 import service_account
 from google_trans_new import google_translator
+from publication_documents.models import Publication
 from sentiments.models import Sentiment
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
@@ -89,3 +90,6 @@ def feedback_add_sentiment(sender, instance, *args, **kwargs):
                 "compound": sentiment_dict["compound"],
             },
         )
+
+        # Update publication sentiment plot
+        instance.publication_object.save()

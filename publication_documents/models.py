@@ -1,3 +1,5 @@
+from distutils.command.upload import upload
+
 from django.db import models
 
 
@@ -42,6 +44,7 @@ class Attachment(models.Model):
 
 
 class Publication(models.Model):
+
     id = models.BigIntegerField(primary_key=True)
     type = models.ForeignKey(
         "initiatives.Type", on_delete=models.CASCADE, blank=True, null=True
@@ -87,6 +90,12 @@ class Publication(models.Model):
     )
     survey_contact_mail = models.CharField(max_length=100, blank=True, null=True)
     is_complete = models.BooleanField()
+    sentiment_map_png = models.ImageField(
+        upload_to="sentiment_maps/png/", null=True, blank=True
+    )
+    sentiment_map_html = models.FileField(
+        upload_to="sentiment_maps/html/", null=True, blank=True
+    )
 
     def __str__(self) -> str:
         return f"{self.reference} ({self.id})"

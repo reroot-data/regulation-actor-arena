@@ -2,7 +2,9 @@ from django.db import models
 
 
 class Sentiment(models.Model):
-    feedback = models.ForeignKey('feedbacks.Feedback', on_delete=models.CASCADE)
+    feedback = models.ForeignKey(
+        "feedbacks.Feedback", on_delete=models.CASCADE, related_name="sentiments"
+    )
     positive = models.DecimalField(max_digits=4, decimal_places=3)
     neutral = models.DecimalField(max_digits=4, decimal_places=3)
     negative = models.DecimalField(max_digits=4, decimal_places=3)

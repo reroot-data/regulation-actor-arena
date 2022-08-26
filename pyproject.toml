@@ -15,6 +15,10 @@ googletrans = "^3.0.0"
 requests-toolbelt = "^0.9.1"
 google-trans-new = "^1.1.9"
 vaderSentiment = "^3.3.2"
+plotly = "^5.10.0"
+Pillow = "^9.2.0"
+pandas = "^1.4.3"
+kaleido = "0.2.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"

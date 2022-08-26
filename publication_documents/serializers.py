@@ -8,6 +8,7 @@ from backend.serializers import (
 )
 from categories.models import Category
 from committees.models import WorkGroup
+from feedbacks.serializers import FeedbackSentimentSerializer
 from initiatives.models import Stage, Status, Type
 from rest_framework import serializers
 
@@ -56,9 +57,17 @@ class AttachmentSerializer(serializers.ModelSerializer):
 
 
 class AttachmentTypeSerializer(serializers.ModelSerializer):
-    class AttachmentType:
+    class Meta:
         model = AttachmentType
         fields = "__all__"
+
+
+class PublicationSentimentsSerializer(serializers.ModelSerializer):
+    feedbacks = FeedbackSentimentSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Publication
+        fields = ("title", "feedbacks")
 
 
 class PublicationSerializer(serializers.ModelSerializer):

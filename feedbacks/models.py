@@ -28,7 +28,9 @@ class Feedback(models.Model):
     date_feedback = models.DateTimeField()
     publication = models.CharField(max_length=100)
     publication_object = models.ForeignKey(
-        "publication_documents.Publication", on_delete=models.CASCADE
+        "publication_documents.Publication",
+        on_delete=models.CASCADE,
+        related_name="feedbacks",
     )
     user_type = models.ForeignKey(
         "committees.UserType", on_delete=models.CASCADE, null=True, blank=True

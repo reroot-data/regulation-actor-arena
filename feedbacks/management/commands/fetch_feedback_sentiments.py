@@ -14,7 +14,6 @@ class Command(BaseCommand):
         feedbacks = Feedback.objects.filter(
             feedback_en__isnull=False, organization__isnull=False
         )
-        print(feedbacks)
         feedback_count = feedbacks.count()
         for i, feedback in enumerate(feedbacks):
             print(f"feedback {i+1} of {feedback_count} ")

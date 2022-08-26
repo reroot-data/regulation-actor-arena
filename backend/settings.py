@@ -139,3 +139,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 REST_FRAMEWORK = {
     "DATETIME_INPUT_FORMATS": ["%Y/%m/%d %H:%M:%S"],
 }
+
+# Static files
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "static"
