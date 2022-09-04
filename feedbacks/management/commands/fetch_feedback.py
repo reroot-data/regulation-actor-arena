@@ -10,7 +10,7 @@ from requests.adapters import HTTPAdapter, Retry
 
 
 class Command(BaseCommand):
-    help = "Fetches the initiatives from the Have your say platform"
+    help = "Fetches the initiatives from the Have Your Say platform"
 
     def add_arguments(self, parser: CommandParser) -> None:
         parser.add_argument("publication_id", type=int)

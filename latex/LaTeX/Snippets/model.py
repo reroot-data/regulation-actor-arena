@@ -1,16 +1,6 @@
 from django.db import models
+
 from named_entities.models import NamedEntity
-
-
-class FeedbackAttachment(models.Model):
-    id = models.BigIntegerField(primary_key=True)
-    size = models.BigIntegerField()
-    documentId = models.TextField()
-    ers_file_name = models.TextField()
-    pages = models.IntegerField(null=True, blank=True)
-    pdf_size = models.BigIntegerField()
-    is_rendered = models.BooleanField()
-    is_externalized_in_hrs = models.BooleanField()
 
 
 class Feedback(models.Model):
@@ -26,7 +16,7 @@ class Feedback(models.Model):
     feedback_en = models.TextField(null=True, blank=True)
     feedback_lemmatized = models.TextField(null=True, blank=True)
     first_name = models.CharField(max_length=500, null=True, blank=True)
-    attachments = models.ManyToManyField(FeedbackAttachment, blank=True)
+    attachments = models.ManyToManyField("FeedbackAttachment", blank=True)
     date_feedback = models.DateTimeField()
     publication = models.CharField(max_length=100)
     publication_object = models.ForeignKey(

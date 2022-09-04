@@ -28,7 +28,7 @@ from ...serializers import InitiativeSerializer, LegalBasisSerializer
 
 
 class Command(BaseCommand):
-    help = "Fetches the initiatives from the Have your say platform"
+    help = "Fetches the initiatives from the Have Your Say platform"
 
     def get_data_total_from_response(self, response):
         """

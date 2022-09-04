@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "feedbacks",
     "countries",
     "sentiments",
+    "named_entities",
 ]
 
 MIDDLEWARE = [

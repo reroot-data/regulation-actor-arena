@@ -1,12 +1,19 @@
+import re
+from email.policy import default
+
 from committees.models import UserType
 from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from google.api_core.exceptions import InvalidArgument
+from google.cloud import language_v1
 from google.cloud import translate_v3 as translate
 from google.oauth2 import service_account
 from google_trans_new import google_translator
+from named_entities.models import NamedEntity, NamedEntityMentions, NamedEntityMetaData
+from nltk.stem import WordNetLemmatizer
 from publication_documents.models import Publication
 from sentiments.models import Sentiment
+from spellchecker import SpellChecker
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 from .models import Feedback
@@ -65,6 +72,72 @@ def Feedback_add_translation(sender, instance, **kwargs):
     # except InvalidArgument as e:
     #     return
     return
+
+
+@receiver(pre_save, sender=Feedback)
+def feedback_spell_check(sender, instance, *args, **kwargs):
+    spell = SpellChecker()
+    list_words = re.findall("[a-zA-Z]}", instance.feedback_en)
+    misspelled = spell.unknown(list_words)
+    for word in misspelled:
+        instance.feedback_en.replace(word, spell.correction(word))
+
+
+@receiver(pre_save, sender=Feedback)
+def feedback_trim_whitespaces(sender, instance, *args, **kwargs):
+    instance.feedback_en = re.sub(" +", " ", instance.feedback_en)
+
+
+@receiver(pre_save, sender=Feedback)
+def feedback_lemmatization(sender, instance, *args, **kwargs):
+    lemmatizer = WordNetLemmatizer()
+    text_list = re.findall("[a-zA-Z]}", instance.feedback_en)
+    lemmatized = [lemmatizer.lemmatize(word) for word in text_list]
+    instance.feedback_lemmatized = " ".join(lemmatized)
+
+
+@receiver(post_save, sender=Feedback)
+def feedback_add_named_entity(sender, instance, *args, **kwargs):
+
+    client = language_v1.LanguageServiceClient()
+
+    # settings
+    type_ = language_v1.Document.Type.PLAIN_TEXT
+    encoding_type = language_v1.EncodingType.UTF8
+    language = "en"
+
+    # content
+    document = {
+        "content": instance.feedback_lemmatized,
+        "type_": type_,
+        "language": language,
+    }
+    response = client.analyze_entities(
+        request={"document": document, "encoding_type": encoding_type}
+    )
+
+    for entity in response.entities:
+        entity = NamedEntity.objects.update_or_create(
+            name=entity.name,
+            defaults={
+                "entity_type": language_v1.Entity.Type(entity.type_).name,
+                "salience": entity.salience,
+            },
+        )
+        for metadata_name, metadata_value in entity.metadata.items():
+            NamedEntityMetaData.objects.update_or_create(
+                named_entity=instance,
+                key=metadata_name,
+                defaults={"value": metadata_value},
+            )
+
+        for mention in entity.mentions:
+            NamedEntityMentions.objects.update_or_create(
+                named_entity=instance,
+                key=mention.text.content,
+                defaults={"value": language_v1.EntityMention.Type(mention.type_).name},
+            )
+        instance.named_entities.add(entity)
 
 
 @receiver(post_save, sender=Feedback)

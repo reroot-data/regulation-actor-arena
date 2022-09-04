@@ -1,0 +1,62 @@
+\chapter{Methodology and Results}
+
+In the previous section, the three main challenges of this project were identified. The first of these issues, the identification of all relevant actors, has already been addressed by the Commission itself, namely by creating a platform that groups all feedback surrounding a certain proposal. The Have Your Say platform was developed as part of the general idea of Better Regulation \autocite{europeancommission2022}, because the EU Commission wanted to actively seek oud feedback from citizens, businesses, and stakeholders at all stages of the legislative and policy making process. Considering the vast impact of EU policies and laws on European citizens, the Commission considered it an important objective to take the views of these citizens into account during the policy development.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{../LaTeX/Figures/have_your_say.png}
+	\caption{The Have Your Say platform}
+\end{figure}
+
+Hence, the Have Your Say platform was put forward by the Commission, providing details of upcoming policy initiatives. The public is thus given the chance to express their views and ideas on the propositions that are currently being developed, across all policy areas. All details regarding the initiatives are collected in a so-called Call For Evidence, which can be consulted through the platform, thereby simplifying public consultations. Moreover, it is possible to sign up for notifications regarding new developments as initiatives take shape, including after the adoption of legislation. A straight-forward, user-friendly search option allows users to easily browse the different policy initiatives.
+
+Since the Have Your Say platform bundles all documents of the call for evidence, these documents will be used as the input for this dissertation project. Since the platform is publicly available and the proposals can be filtered, the platform itself solves the first issue that was identified in the previous section. However, we decided to mirror the data in our own database, so that we can include the relevant proposals in our already existing members’ area in a way that is most relevant for our members. For instance, additional filters will be included like filtering on the type of interest group. Aditionally, the results of the analysis will be included, creating a convenient overview for our members, so that they do not have to search the platform themselves.
+
+To construct this mirror API, the data first needs to be fetched and cleaned. For the second and the third issue, namely the identification of topics and policy support analysis, additional preprocessing needs to be performed before they can be analysed. Therefore, the next section will discuss the fetching process, followed by the discussion of the (pre-)processing. In the final section we zoom in on the analysis.
+
+\section{Data Preprocessing}
+\subsection*{Data Selection}
+Like many modern websites, the platform is designed in such a way that the front-end HTML code is entirely separated from the back-end database data. In this architecture, the back-end functions as an API that is queried by the front-end. This feature simplifies the scraping process, because the data doesn't have to be subtracted from the parsed HTML code, but the frontend’s API call can easily be mimicked. Whereas in more traditional architecture, the HTML code needs to be parsed with a library like Python’s beautifulsoup, this step can be skipped when the data can be requested directly from the back-end API that returns JSON (JavaScript Object Notation) data.
+
+One important side note is that in some cases, organisations did not write text, but only submitted PDF documents with their text. Therefore, when fetching the data, the PDF also needs to be downloaded and loaded into memory to check whether it contains any new text.
+
+After fetching, the data is saved in a PostgreSQL database. In this project, using a SQL database has some advantages compared to other storage options like data lakes and warehouses. First, the platform already uses some sort of SQL database on the backend. Mirroring the data for our own analysis is therefore made easier by choosing a similar technology. Secondly, as mentioned previously, the SQL database can easily be connected to a webserver to serve the data. Therefore, this option is convenient for serving the data in our internal members’ area. A third and final reasoning for using a SQL database is that the technology is already used in multiple other projects at APPLiA Europe.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{../LaTeX/Figures/api.png}
+	\caption{API sample output}
+\end{figure}
+
+To ease the process of data fetching, a web server was set up. Not only will this web server be used to serve the final data as an API, but it will also simplify the process of fetching data and transferring it to the PostgreSQL database. Many technologies exist, but two main ones were considered for this project. One could opt for a web server written in Javascript, like for example Express.js because the data that is returned by the Have Your Say platform is JSON data. However, for this project, a Python framework was chosen, because of the rich ecosystem of Python libraries for processing and analysing text data.
+
+Within Python there are also several web server libraries. In the end Django was chosen, mostly because of its powerful Django Rest Framework extension. This library transforms the Django web server into an API web server. It includes automatic deserialization of the input data into database values. This feature makes it easy to mirror the received data into a database model. When the database structure is correctly set up, the data will be interpreted automatically by the extension without manual transformation.
+
+At this point, the data can be shown to the members, but for the classification and analysis of the policy position, further data cleaning and transformation is required.
+
+\subsection*{Data Cleaning and Data Transformation}
+After the data has been stored in the database, it needs to be cleaned and transformed before it can be analysed further. Several steps have to be taken before the text is ready for analysis. First, all text is translated into English. To determine whether text is written in English or another language, the Google Cloud Translator API (V3) is used. If the text is determined not to be English, Google Cloud Translator is also used to translate the text into English.
+
+Once all text is translated, unnecessary text like links and references is deleted and the text is trimmed to eliminate unnecessary whitespaces. Since the feedback is formally submitted by trade associations, it can be expected that the text does not include emoticons. However, in the following sections, packages will be used that can interpret emoticons nevertheless.
+
+Next a spell check is performed. Multiple packages exist to perform spell checking in Python. In the end, it was decided to use the most popular package, pyspellchecker, because it is actively maintained and suited for Python 3. A last step in the preprocessing is the lemmatization of the text. Here, the NLTK package is used to transform the text.
+
+\section{Analysis}
+After the preprocessing stage, the data is ready to be analysed. For the second and third issue that were outlined in the problem description, two separate tools will be used. First, in order to gain insight into the topics that are included in a text, Named Entity Recognition will be run and eventually topic modelling will be incorporated. Second, to determine the final policy preference of an actor, Sentiment Analysis is utilised.
+
+As already specified, one of the main objectives of the project is to determine the relevant topics that are mentioned in a text. A first step in identifying these topics is made by listing the named entities that are contained in the text. For this analysis, the Google Natural Language AI is used. The results of this analysis is useful for our members when scanning the documents to quickly give an overview of interesting pieces of text, for instance references to another legal text. The results will also be saved and used as tags so that the texts can be filtered based upon the selection of certain tags.
+
+Another main objective of the project is determining the final policy preferences of all actors. One way of analysing this preference is to perform Sentiment Analysis on the (pre-)processed text. Since the Have Your Say platform does not include the preferred policy option of the actors, we will use a lexicon-based approach, as the text is not labelled. Another advantage to this unsupervised approach is that it is fast and easy to implement in a web server. Every time a new text is saved into the database, the Sentiment Analysis will be run and stored in a separate database table. It is context independent, so we will not have to build this separately before we can start using it.
+
+In the most basic interpretation, an organisation submitting a  text whose sentiment  is perceived as positive can be seen as being in favour for a certain proposal, while negative sentiments can signal opposition to a proposal. Of course, in most cases, the situation is not this clear cut. As already mentioned, in most cases, actors propose amendments, regardless of whether they support or oppose a proposal. This could influence the sentiment of the text and introduce some variability. Therefore, we cannot simply only consider the compound value that is returned by the Sentiment Analysis. It is also of importance whether a text contains both positive and negative sentiments or whether there is only one sentiment present. This could be either exclusively positive, negative or neutral.
+
+For the analysis, the Vader package is used. The input can be a sentence or a text and the output analysis is a dictionary of neutral, positive and negative ratios and a normalised, weighted composite score between -1 (most extreme negative) and +1 (most extreme positive) \autocite{vader2022}. The results are stored in a separate model, so that the values can be fetched without having to run the analysis every time.
+
+\begin{figure}
+	\includegraphics[width=\textwidth]{../LaTeX/Figures/scatter_plot.png}
+	\caption{Sample graphical output of the Sentiment Analysis}
+\end{figure}
+
+Then, results of the Sentiment Analysis are visualised and will be included in the internal members area. The chosen graphical representation is a scatter plot, where the positive sentiment is shown on the x-axis and the negative sentiment on the y-axis, both with 1 as the highest possible score. The diagonal in the scatter plot therefore represents a situation where there is an equal amount of negative and positive sentiment contained in the text. However,  when a data point is very close to the origin, the text is predominantly neutral in sentiment. The further from the origin of the graph, the more negative and/or negative sentiment will be included and less neutral sentiment.
+
+The visualisation gives an indication of the position of the actors’ policy preference. The further it is from the origin of the graph, the stronger the opinion on the Commission’s proposal. A sentiment situated on the x-axis (y=0) does not include any negative sentiments. If X equals 0, the text only includes neutral sentiments, while an X value of 1 indicates only positive sentiments are included in the text. The same logic can be applied to points situated on the y-axis (x=0).
+
+In the end, the most important thing is to communicate these findings to our members. Therefore, the results will be served by a Django web server, so that the information can be shown in our internal members area. It will act as a dashboard in the sense that it will give an overview of all important information of a proposal: Information regarding the proposal that is included in the Have Your Say platform, links to relevant documents and webpages, and all feedbacks with the topics and the Sentiment Analysis along with the graphical representation of the sentiment scatter plot.
